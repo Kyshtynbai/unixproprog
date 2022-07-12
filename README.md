@@ -1,8 +1,13 @@
 ## Код apue.h для книги UNIX профессиональное программирование СОБРАН и ИСПРАВЛЕН ##
-просто сделать 
+просто сделать
+``` 
 sudo cp apue.3e/include/apue.h /usr/include/
 sudo cp apue.3e/lib/libapue.a /usr/local/lib
-
+```
+код собирать командой
+``` 
+gcc -lapue siski.c
+```
 ## Кто хочет пересобрать ##
 1. Скачать исходный код отсюда:
 http://www.apuebook.com/code3e.html
