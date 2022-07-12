@@ -7,11 +7,12 @@ sudo cp apue.3e/lib/libapue.a /usr/local/lib
 1. Скачать исходный код отсюда:
 http://www.apuebook.com/code3e.html
 2. Добавить в файл `filedir/devrdev.c` код
-#ifdef LINUX
+```#ifdef LINUX
 #include <sys/sysmacros.h>
 #endif
+```
 3. В файле buf.c заменить строки с 90 на:
-
+```
 #ifdef _LP64
 #define _flag __pad[4]
 #define _ptr __pad[1]
@@ -46,7 +47,7 @@ buffer_size(FILE *fp)
 #error unknown stdio implementation!
 
 #endif
-
+```
 
 
 
