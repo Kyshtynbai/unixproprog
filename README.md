@@ -6,7 +6,7 @@ sudo cp apue.3e/lib/libapue.a /usr/local/lib
 ```
 код собирать командой
 ``` 
-gcc -lapue siski.c
+gcc siski.c -lapue
 ```
 ## Кто хочет пересобрать ##
 1. Скачать исходный код отсюда:
